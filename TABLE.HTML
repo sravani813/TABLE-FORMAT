@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS for table rows */
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Information Table</h2>
+
+<!-- Use colspan to merge two header cells -->
+<table>
+    <tr>
+        <th>Name</th>
+        <th colspan="2">Contact Info</th> <!-- colspan combines two cells into one -->
+        <th>Location</th>
+    </tr>
+    <tr>
+        <th></th> <!-- This empty cell is for spacing -->
+        <th>Email</th>
+        <th>Phone</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>John Doe</td>
+        <td>johndoe@example.com</td>
+        <td>123-456-7890</td>
+        <td rowspan="2">New York</td> <!-- rowspan spans two rows -->
+    </tr>
+    <tr>
+        <td>Jane Smith</td>
+        <td>janesmith@example.com</td>
+        <td>987-654-3210</td>
+    </tr>
+    <tr>
+        <td>Mary Johnson</td>
+        <td>maryjohnson@example.com</td>
+        <td>555-123-4567</td>
+        <td>Los Angeles</td>
+    </tr>
+</table>
+
+</body>
+</html>
